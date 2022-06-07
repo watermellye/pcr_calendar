@@ -9,11 +9,25 @@ font = ImageFont.truetype(font_path, int(item_height * 0.67))
 
 
 color = [
-    {'front': 'black', 'back': 'white'},
-    {'front': 'white', 'back': 'ForestGreen'},
-    {'front': 'white', 'back': 'DarkOrange'},
-    {'front': 'white', 'back': 'BlueViolet'},
+    {
+        'front': 'black',
+        'back': 'white'
+    },  # 活动(中间)、掉率庆典(上方)、团队战(下方)
+    {
+        'front': 'white',
+        'back': '#0fbec0'
+    },
+    {
+        'front': 'white',
+        'back': '#a1b75d'
+    },
+    {
+        'front': 'white',
+        'back': '#D0B777'
+    },
 ]
+
+ 
 
 def create_image(item_number, title_len):
     width = int(item_height * title_len * 0.7)
